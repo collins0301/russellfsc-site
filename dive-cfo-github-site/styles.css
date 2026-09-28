@@ -1,0 +1,87 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  background: #dceff3;
+}
+
+.homepage {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.design-canvas {
+  position: relative;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.approved-design {
+  display: block;
+  width: 100vw;
+  height: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/*
+  The homepage is the approved image itself, unchanged.
+  These hotspots are completely transparent and only make the visible
+  navigation/buttons/cards clickable.
+*/
+.hotspot {
+  position: absolute;
+  z-index: 10;
+  display: block;
+  overflow: hidden;
+  text-indent: -9999px;
+  white-space: nowrap;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.hotspot:focus,
+.hotspot:hover,
+.hotspot:active {
+  background: transparent;
+  outline: 0;
+}
+
+/* Header navigation — percentages are based on the 1672 × 941 approved image. */
+.hs-home      { left: 37.20%; top: 1.80%; width: 4.10%; height: 6.45%; }
+.hs-services  { left: 43.25%; top: 1.80%; width: 5.45%; height: 6.45%; }
+.hs-about     { left: 49.55%; top: 1.80%; width: 4.80%; height: 6.45%; }
+.hs-resources { left: 55.45%; top: 1.80%; width: 6.55%; height: 6.45%; }
+.hs-contact   { left: 62.40%; top: 1.80%; width: 4.90%; height: 6.45%; }
+.hs-work      { left: 76.45%; top: 1.60%; width: 15.45%; height: 6.85%; }
+
+/* Hero CTAs */
+.hs-explore   { left: 5.35%; top: 52.65%; width: 15.85%; height: 5.20%; }
+.hs-blueprint { left: 20.95%; top: 52.65%; width: 20.35%; height: 5.20%; }
+
+/* Service cards */
+.hs-card1     { left: 5.35%; top: 59.55%; width: 28.75%; height: 26.55%; }
+.hs-card2     { left: 35.05%; top: 59.55%; width: 28.55%; height: 26.55%; }
+.hs-card3     { left: 64.70%; top: 59.55%; width: 28.05%; height: 26.55%; }
