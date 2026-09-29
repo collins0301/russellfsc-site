@@ -8,17 +8,11 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="homepage" aria-label="Dive CFO home page">
+  <!-- Desktop/tablet: approved homepage image stays completely unchanged. -->
+  <main class="homepage desktop-home" aria-label="Dive CFO home page">
     <div class="design-canvas">
-      <img
-        class="approved-design"
-        src="assets/dive-cfo-homepage.png"
-        width="1672"
-        height="941"
-        alt="Dive CFO — financial strategy for dive and adventure businesses"
-      >
+      <img class="approved-design" src="assets/dive-cfo-homepage.png" width="1672" height="941" alt="Dive CFO — financial strategy for dive and adventure businesses">
 
-      <!-- Invisible clickable areas. They do not change any pixels in the approved design. -->
       <a class="hotspot hs-home" href="./" aria-label="Home">Home</a>
       <a class="hotspot hs-services" href="services.html" aria-label="Services">Services</a>
       <a class="hotspot hs-about" href="about.html" aria-label="About">About</a>
@@ -34,5 +28,92 @@
       <a class="hotspot hs-card3" href="services.html#trip-profitability" aria-label="Dive Trip Profitability and Planning">Dive Trip Profitability & Planning</a>
     </div>
   </main>
+
+  <!-- Phone: same brand/message, reformatted so it is readable and tappable. -->
+  <main class="mobile-home" aria-label="Dive CFO mobile home page">
+    <header class="m-header">
+      <a class="m-brand" href="./">
+        <span class="m-logo-mark" aria-hidden="true"></span>
+        <span><strong>DIVE <b>CFO</b></strong><small>BY RUSSELL FINANCIAL STRATEGIES &amp; CONSULTING</small></span>
+      </a>
+      <button class="m-menu" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="m-nav" aria-label="Mobile navigation">
+        <a href="./">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="m-hero">
+      <div class="m-rays" aria-hidden="true"></div>
+      <div class="m-hero-content">
+        <p class="m-kicker">FINANCIAL STRATEGY FOR DIVE & ADVENTURE BUSINESSES</p>
+        <h1>Know Where Your Dive Business <span>Actually Makes Money.</span></h1>
+        <p class="m-lead">Fractional CFO and financial strategy for dive shops, resorts, liveaboards, dive travel companies, and outdoor businesses.</p>
+
+        <div class="m-benefits">
+          <div><strong>▮▮▮</strong><span>STRONGER<br>PROFITS</span></div>
+          <div><strong>⚙</strong><span>CLEARER<br>OPERATIONS</span></div>
+          <div><strong>◉</strong><span>SMARTER<br>GROWTH</span></div>
+          <div><strong>●●</strong><span>MORE TIME<br>IN THE WATER</span></div>
+        </div>
+
+        <div class="m-actions">
+          <a class="m-btn primary" href="services.html">EXPLORE SERVICES →</a>
+          <a class="m-btn outline" href="services.html#blueprint">GET THE DIVE PROFIT BLUEPRINT →</a>
+        </div>
+
+        <div class="m-dashboard" aria-label="Illustrative financial dashboard">
+          <div class="m-dash-label">ILLUSTRATIVE DASHBOARD</div>
+          <div class="m-stats">
+            <div><span>Revenue</span><strong>$284,650</strong><em>▲ 12%</em></div>
+            <div><span>Net Profit</span><strong>$62,480</strong><em>▲ 18%</em></div>
+            <div><span>Cash Flow</span><strong>$96,230</strong><em>▲ 27%</em></div>
+            <div><span>Trip Margin</span><strong>38%</strong><em>Target tracked</em></div>
+          </div>
+          <div class="m-chart">
+            <span>Monthly Cash Flow</span>
+            <svg viewBox="0 0 320 110" role="img" aria-label="Rising illustrative monthly cash flow">
+              <g stroke="rgba(255,255,255,.12)" stroke-width="1"><line x1="8" y1="25" x2="312" y2="25"/><line x1="8" y1="55" x2="312" y2="55"/><line x1="8" y1="85" x2="312" y2="85"/></g>
+              <path d="M12 92L42 78L70 66L98 70L126 54L154 58L182 43L210 47L238 30L270 34L306 16" fill="none" stroke="#65e3ea" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="m-services">
+      <a class="m-card" href="services.html#blueprint">
+        <div class="m-card-art mask-art"><span class="laptop">▰</span><span class="gear">◉</span></div>
+        <div><span class="m-card-num">01</span><h2>Dive Profit Blueprint</h2><p>Understand your numbers, find more profit, and make better decisions.</p><strong>LEARN MORE →</strong></div>
+      </a>
+      <a class="m-card" href="services.html#fractional-cfo">
+        <div class="m-card-art tank-art"><span class="laptop">▰</span><span class="gear">◍◍</span></div>
+        <div><span class="m-card-num">02</span><h2>Fractional CFO Services</h2><p>Strategy, reporting, cash flow, and financial leadership for growth.</p><strong>LEARN MORE →</strong></div>
+      </a>
+      <a class="m-card" href="services.html#trip-profitability">
+        <div class="m-card-art trip-art"><span>≈</span><span>▱</span></div>
+        <div><span class="m-card-num">03</span><h2>Dive Trip Profitability & Planning</h2><p>Know true trip costs, break-even headcount, pricing, and margin before you sell.</p><strong>LEARN MORE →</strong></div>
+      </a>
+    </section>
+
+    <section class="m-industries">
+      <p>INDUSTRIES WE SERVE</p>
+      <h2>Built for the Unique Needs of the Dive Industry</h2>
+      <div class="m-industry-grid">
+        <span>◫<small>Dive Shops<br>& Retail</small></span><span>▱<small>Liveaboards</small></span><span>♨<small>Dive Resorts<br>& Lodges</small></span><span>◎<small>Dive Travel<br>Companies</small></span><span>◇<small>Training<br>Organizations</small></span><span>△<small>Outdoor &<br>Adventure</small></span><span>●●●<small>Nonprofits &<br>Conservation</small></span><span>▣<small>Photography<br>& Media</small></span>
+      </div>
+      <a class="m-work" href="contact.html">WORK WITH US →</a>
+    </section>
+  </main>
+
+  <script>
+    const menuButton=document.querySelector('.m-menu');
+    const mobileNav=document.querySelector('.m-nav');
+    if(menuButton&&mobileNav){
+      menuButton.addEventListener('click',()=>{
+        const open=mobileNav.classList.toggle('open');
+        menuButton.setAttribute('aria-expanded',String(open));
+      });
+    }
+  </script>
 </body>
 </html>
