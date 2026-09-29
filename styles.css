@@ -65,19 +65,19 @@ body {
   outline: 0;
 }
 
-.hs-home      { left: 37.20%; top: 1.80%; width: 4.10%; height: 6.45%; }
-.hs-services  { left: 43.25%; top: 1.80%; width: 5.45%; height: 6.45%; }
-.hs-about     { left: 49.55%; top: 1.80%; width: 4.80%; height: 6.45%; }
-.hs-resources { left: 55.45%; top: 1.80%; width: 6.55%; height: 6.45%; }
-.hs-contact   { left: 62.40%; top: 1.80%; width: 4.90%; height: 6.45%; }
-.hs-work      { left: 76.45%; top: 1.60%; width: 15.45%; height: 6.85%; }
+.hs-home      { left: 36.20%; top: 1.80%; width: 4.60%; height: 6.45%; }
+.hs-services  { left: 42.90%; top: 1.80%; width: 5.70%; height: 6.45%; }
+.hs-about     { left: 50.00%; top: 1.80%; width: 4.80%; height: 6.45%; }
+.hs-resources { left: 55.80%; top: 1.80%; width: 6.20%; height: 6.45%; }
+.hs-contact   { left: 64.10%; top: 1.80%; width: 4.90%; height: 6.45%; }
+.hs-work      { left: 80.10%; top: 1.55%; width: 17.30%; height: 7.05%; }
 
 .hs-explore   { left: 5.35%; top: 52.65%; width: 15.85%; height: 5.20%; }
 .hs-blueprint { left: 20.95%; top: 52.65%; width: 20.35%; height: 5.20%; }
 
-.hs-card1     { left: 5.35%; top: 59.55%; width: 28.75%; height: 26.55%; }
-.hs-card2     { left: 35.05%; top: 59.55%; width: 28.55%; height: 26.55%; }
-.hs-card3     { left: 64.70%; top: 59.55%; width: 28.05%; height: 26.55%; }
+.hs-card1     { left: 2.55%; top: 68.45%; width: 30.25%; height: 27.70%; }
+.hs-card2     { left: 33.70%; top: 68.45%; width: 30.30%; height: 27.70%; }
+.hs-card3     { left: 64.85%; top: 68.45%; width: 30.65%; height: 27.70%; }
 
 .mobile-home { display:none; }
 
