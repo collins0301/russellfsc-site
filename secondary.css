@@ -101,3 +101,8 @@ a{color:inherit} img{max-width:100%;display:block}.container{width:min(1180px,ca
   .site-header .brand-title{font-size:1.6rem}
   .site-header .brand-sub{display:block;font-size:.46rem}
 }
+
+/* Starting-at prices on Services page */
+.service-label .price-tag{display:flex;flex-direction:column;gap:4px;margin:0 0 14px;padding:12px 16px;border-radius:14px;background:#e3f6f7;border:1px solid #bfe7ea}
+.service-label .price-tag strong{font-family:'Outfit','Montserrat',sans-serif;font-size:1.45rem;color:#0a2e4a;letter-spacing:-.01em}
+.service-label .price-tag span{font-size:.86rem;color:#4f6876;line-height:1.45}
