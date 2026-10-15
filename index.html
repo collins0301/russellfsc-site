@@ -3,102 +3,146 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Dive CFO by Russell Financial Strategies & Consulting — financial strategy for dive and adventure businesses.">
-  <title>Dive CFO | Russell Financial Strategies & Consulting</title>
+  <title>Dive CFO | Fractional CFO for Dive Shops, Resorts &amp; Dive Travel</title>
+  <meta name="description" content="Dive CFO by Russell Financial Strategies &amp; Consulting. Fractional CFO, controller and trip-profitability help for dive shops, resorts, liveaboards and dive travel companies. Run by a PADI and SDI instructor with a Master of Accountancy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Desktop/tablet: approved homepage image stays completely unchanged. -->
-  <main class="homepage desktop-home" aria-label="Dive CFO home page">
-    <div class="design-canvas">
-      <img class="approved-design" src="assets/dive-cfo-homepage-v2.jpg" width="1710" height="920" onerror="this.onerror=null;this.src=&quot;assets/dive-cfo-homepage.png&quot;;" alt="Dive CFO — financial strategy for dive and adventure businesses">
 
-      <a class="hotspot hs-home" href="./" aria-label="Home">Home</a>
-      <a class="hotspot hs-services" href="services.html" aria-label="Services">Services</a>
-      <a class="hotspot hs-about" href="about.html" aria-label="About">About</a>
-      <a class="hotspot hs-resources" href="resources.html" aria-label="Resources">Resources</a>
-      <a class="hotspot hs-contact" href="contact.html" aria-label="Contact">Contact</a>
-      <a class="hotspot hs-work" href="contact.html" aria-label="Work with us">Work With Us</a>
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="./" aria-label="Dive CFO home">
+      <img class="brand-emblem" src="assets/logo-emblem.png" alt="" width="136" height="122">
+      <span class="brand-words">
+        <span class="brand-title">DIVE <b>CFO</b></span>
+        <span class="brand-sub">BY RUSSELL FINANCIAL STRATEGIES &amp; CONSULTING</span>
+      </span>
+    </a>
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main">
+      <a href="./" aria-current="page">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="work-btn" href="contact.html">WORK WITH US <span aria-hidden="true">→</span></a>
+  </div>
+</header>
 
-      <a class="hotspot hs-card1" href="services.html#blueprint" aria-label="Dive Profit Blueprint">Dive Profit Blueprint</a>
-      <a class="hotspot hs-card2" href="services.html#fractional-cfo" aria-label="Fractional CFO Services">Fractional CFO Services</a>
-      <a class="hotspot hs-card3" href="services.html#trip-profitability" aria-label="Dive Trip Profitability and Planning">Dive Trip Profitability & Planning</a>
+<main>
+  <section class="hero">
+    <div class="rays" aria-hidden="true"></div>
+    <img class="hero-art" src="assets/hero-dashboard.jpg" alt="" width="850" height="522">
+    <div class="wrap hero-inner">
+      <p class="kicker">Financial strategy for<br>dive &amp; adventure businesses</p>
+      <h1>Know Where Your<br>Dive Business<br><span>Actually Makes Money.</span></h1>
+      <p class="lead">Fractional CFO and financial strategy for dive shops, resorts, liveaboards, dive travel companies, and outdoor businesses.</p>
+      <div class="hero-actions">
+        <a class="btn btn-main" href="contact.html">Book a free intro call <span aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="tel:+18016028184">Call 801-602-8184</a>
+      </div>
     </div>
-  </main>
+  </section>
 
-  <!-- Phone: same brand/message, reformatted so it is readable and tappable. -->
-  <main class="mobile-home" aria-label="Dive CFO mobile home page">
-    <header class="m-header">
-      <a class="m-brand" href="./">
-        <span class="m-logo-mark" aria-hidden="true"></span>
-        <span><strong>DIVE <b>CFO</b></strong><small>BY RUSSELL FINANCIAL STRATEGIES &amp; CONSULTING</small></span>
-      </a>
-      <button class="m-menu" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
-      <nav class="m-nav" aria-label="Mobile navigation">
-        <a href="./">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a>
-      </nav>
-    </header>
-
-    <section class="m-hero">
-      <div class="m-rays" aria-hidden="true"></div>
-      <div class="m-hero-content">
-        <p class="m-kicker">FINANCIAL STRATEGY FOR DIVE & ADVENTURE BUSINESSES</p>
-        <h1>Know Where Your Dive Business <span>Actually Makes Money.</span></h1>
-        <p class="m-lead">Fractional CFO and financial strategy for dive shops, resorts, liveaboards, dive travel companies, and outdoor businesses.</p>
-
-        <div class="m-dashboard" aria-label="Illustrative financial dashboard">
-          <div class="m-dash-label">ILLUSTRATIVE DASHBOARD</div>
-          <div class="m-stats">
-            <div><span>Revenue</span><strong>$284,650</strong><em>▲ 12%</em></div>
-            <div><span>Net Profit</span><strong>$62,480</strong><em>▲ 18%</em></div>
-            <div><span>Cash Flow</span><strong>$96,230</strong><em>▲ 27%</em></div>
-            <div><span>Trip Margin</span><strong>38%</strong><em>Target tracked</em></div>
-          </div>
-          <div class="m-chart">
-            <span>Monthly Cash Flow</span>
-            <svg viewBox="0 0 320 110" role="img" aria-label="Rising illustrative monthly cash flow">
-              <g stroke="rgba(255,255,255,.12)" stroke-width="1"><line x1="8" y1="25" x2="312" y2="25"/><line x1="8" y1="55" x2="312" y2="55"/><line x1="8" y1="85" x2="312" y2="85"/></g>
-              <path d="M12 92L42 78L70 66L98 70L126 54L154 58L182 43L210 47L238 30L270 34L306 16" fill="none" stroke="#65e3ea" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
+  <section class="services" aria-label="Services">
+    <div class="wrap cards">
+      <a class="card" href="services.html#blueprint">
+        <div class="card-media"><img src="assets/card-1.jpg" alt="Dive mask beside a laptop showing financial charts" width="528" height="103">
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 11h7M9 15h7M9 19h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span></div>
+        <div class="card-body">
+          <h2>Dive Profit Blueprint</h2>
+          <p>A step-by-step system to help you understand your numbers, find more profit, and make better decisions for your dive business.</p>
+          <span class="more">Learn more →</span>
         </div>
+      </a>
+      <a class="card" href="services.html#fractional-cfo">
+        <div class="card-media"><img src="assets/card-2.jpg" alt="Laptop with charts next to scuba regulators" width="530" height="103">
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M5 20V12M10 20V7M15 20v-9M20 20V4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+        </span></div>
+        <div class="card-body">
+          <h2>Fractional CFO Services</h2>
+          <p>Ongoing financial leadership tailored to dive and adventure businesses. Strategy, reporting, cash flow, and support for growth.</p>
+          <span class="more">Learn more →</span>
+        </div>
+      </a>
+      <a class="card" href="services.html#trip-profitability">
+        <div class="card-media"><img src="assets/card-3.jpg" alt="Liveaboard dive boat near a tropical island" width="535" height="103">
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </span></div>
+        <div class="card-body">
+          <h2>Dive Trip Profitability &amp; Planning</h2>
+          <p>Understand true trip costs, set the right prices, and build trips that are both unforgettable and profitable.</p>
+          <span class="more">Learn more →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="trust" aria-label="Credentials">
+    <div class="wrap trust-row">
+      <div><strong>Master of Accountancy</strong><span>University of Utah</span></div>
+      <div><strong>Big-4 trained</strong><span>Started at EY</span></div>
+      <div><strong>Controller experience</strong><span>Tech, homebuilding &amp; multi-brand healthcare</span></div>
+      <div><strong>PADI &amp; SDI Instructor</strong><span>Knows the shop floor and the dive boat</span></div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="eyebrow">Sound familiar?</p>
+      <h2>Busy season was great. So why is cash tight?</h2>
+      <div class="problems">
+        <div><h3>"Sales are up, but cash still feels tight."</h3><p>Often it's inventory, deposits, owner draws, or the slow season—not sales.</p></div>
+        <div><h3>"Our trips sell out, but what do we actually make?"</h3><p>Comp spots, card fees, staff travel, and cancellations quietly eat the margin.</p></div>
+        <div><h3>"Which part of the shop really pays the bills?"</h3><p>Courses, gear, service, fills, and travel each earn very different margins.</p></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="m-services">
-      <a class="m-card" href="services.html#blueprint">
-        <div class="m-card-art mask-art"><span class="laptop">▰</span><span class="gear">◉</span></div>
-        <div><span class="m-card-num">01</span><h2>Dive Profit Blueprint</h2><p>Understand your numbers, find more profit, and make better decisions.</p><strong>LEARN MORE →</strong></div>
-      </a>
-      <a class="m-card" href="services.html#fractional-cfo">
-        <div class="m-card-art tank-art"><span class="laptop">▰</span><span class="gear">◍◍</span></div>
-        <div><span class="m-card-num">02</span><h2>Fractional CFO Services</h2><p>Strategy, reporting, cash flow, and financial leadership for growth.</p><strong>LEARN MORE →</strong></div>
-      </a>
-      <a class="m-card" href="services.html#trip-profitability">
-        <div class="m-card-art trip-art"><span>≈</span><span>▱</span></div>
-        <div><span class="m-card-num">03</span><h2>Dive Trip Profitability & Planning</h2><p>Know true trip costs, break-even headcount, pricing, and margin before you sell.</p><strong>LEARN MORE →</strong></div>
-      </a>
-    </section>
+  <section class="band light">
+    <div class="wrap">
+      <p class="eyebrow">How it works</p>
+      <h2>Three simple steps.</h2>
+      <ol class="steps">
+        <li><span>01</span><h3>Free intro call</h3><p>30 minutes. Tell me what's going on in the business. No prep needed.</p></li>
+        <li><span>02</span><h3>Dive Profit Blueprint</h3><p>I dig into your numbers and show you where the money is made and lost.</p></li>
+        <li><span>03</span><h3>Ongoing support (if you want it)</h3><p>Monthly controller or CFO help to keep the numbers clean and the decisions sharp.</p></li>
+      </ol>
+    </div>
+  </section>
 
-    <section class="m-industries">
-      <p>INDUSTRIES WE SERVE</p>
-      <h2>Built for the Unique Needs of the Dive Industry</h2>
-      <div class="m-industry-grid">
-        <span>◫<small>Dive Shops<br>& Retail</small></span><span>▱<small>Liveaboards</small></span><span>♨<small>Dive Resorts<br>& Lodges</small></span><span>◎<small>Dive Travel<br>Companies</small></span><span>◇<small>Training<br>Organizations</small></span><span>△<small>Outdoor &<br>Adventure</small></span><span>●●●<small>Nonprofits &<br>Conservation</small></span><span>▣<small>Photography<br>& Media</small></span>
+  <section class="cta">
+    <div class="wrap cta-row">
+      <div>
+        <h2>Bring the question your P&amp;L can't answer.</h2>
+        <p>A finance partner who already speaks scuba.</p>
       </div>
-      <a class="m-work" href="contact.html">WORK WITH US →</a>
-    </section>
-  </main>
+      <div class="cta-actions">
+        <a class="btn btn-main" href="contact.html">Book a free intro call →</a>
+        <a class="cta-link" href="mailto:Russell@Russellfsc.com">Russell@Russellfsc.com</a>
+      </div>
+    </div>
+  </section>
+</main>
 
-  <script>
-    const menuButton=document.querySelector('.m-menu');
-    const mobileNav=document.querySelector('.m-nav');
-    if(menuButton&&mobileNav){
-      menuButton.addEventListener('click',()=>{
-        const open=mobileNav.classList.toggle('open');
-        menuButton.setAttribute('aria-expanded',String(open));
-      });
-    }
-  </script>
+<footer class="foot">
+  <div class="wrap foot-row">
+    <span>© 2026 Russell Financial Strategies &amp; Consulting · Payson, Utah</span>
+    <span><a href="tel:+18016028184">801-602-8184</a> · <a href="mailto:Russell@Russellfsc.com">Russell@Russellfsc.com</a></span>
+  </div>
+</footer>
+
+<script>
+  const b=document.querySelector('.menu-btn'),n=document.querySelector('.nav');
+  b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',String(o));});
+</script>
 </body>
 </html>
