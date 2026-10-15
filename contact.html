@@ -11,7 +11,7 @@
 <main>
 <section class="hero">
   <div class="container hero-inner">
-    <div><p class="eyebrow">WORK WITH DIVE CFO</p><h1>Tell me the financial question you <span>need answered.</span></h1><p class="hero-lead">You do not need to know which service you need before you reach out. Start with what is happening in the business and what decision you are trying to make.</p><div class="hero-actions"><a class="btn btn-primary" href="mailto:Russell@Russellfsc.com">EMAIL RUSSELL →</a><a class="btn btn-secondary" href="tel:+18016028184">CALL 801-602-8184 →</a></div></div>
+    <div><p class="eyebrow">WORK WITH DIVE CFO</p><h1>Tell me the financial question you <span>need answered.</span></h1><p class="hero-lead">You do not need to know which service you need before you reach out. Start with what is happening in the business and what decision you are trying to make.</p><div class="hero-actions"><a class="btn btn-primary" href="#contactForm">SEND A MESSAGE →</a><a class="btn btn-secondary" href="tel:+18016028184">CALL 801-602-8184 →</a></div></div>
     <aside class="hero-panel"><span class="panel-kicker">GOOD REASONS TO REACH OUT</span><h2>“I need to know…”</h2><div class="panel-list"><div><b>Profit</b>Which part of the business is actually making money?</div><div><b>Cash</b>Why does cash feel tight when sales look good?</div><div><b>Trips</b>What should we charge and how many spots do we need?</div><div><b>Growth</b>Can we afford the next hire, location, trip, or investment?</div></div></aside>
   </div>
 </section>
@@ -19,12 +19,17 @@
 <section class="section white">
   <div class="container contact-grid">
     <div>
-      <span class="section-kicker">CONTACT</span><h2 style="margin:0 0 14px;font-family:Montserrat,sans-serif;font-size:2.8rem;line-height:1.05;letter-spacing:-.04em">A practical conversation starts here.</h2><p class="section-intro">The form will open an email to Russell with your answers already organized. No account or portal required.</p>
+      <span class="section-kicker">CONTACT</span><h2 style="margin:0 0 14px;font-family:Montserrat,sans-serif;font-size:2.8rem;line-height:1.05;letter-spacing:-.04em">A practical conversation starts here.</h2><p class="section-intro">Fill out the form and it goes straight to Russell. No account, no portal, and nothing to download. Prefer to talk? Call or text 801-602-8184.</p>
       <div class="contact-card" style="margin-top:28px"><a class="contact-method" href="mailto:Russell@Russellfsc.com"><small>Email</small><strong>Russell@Russellfsc.com</strong></a><a class="contact-method" href="tel:+18016028184"><small>Phone</small><strong>801-602-8184</strong></a><div class="contact-method"><small>Based in</small><strong>Payson, Utah</strong></div></div>
       <div class="callout" style="margin-top:24px"><h3>What happens next?</h3><p><strong>1.</strong> You explain the problem or decision.<br><strong>2.</strong> We identify the financial information needed.<br><strong>3.</strong> Russell recommends the smallest useful next step—project, Controller support, CFO support, or simply a better question to pursue.</p></div>
     </div>
 
-    <form class="form-card" id="contactForm">
+    <form class="form-card" id="contactForm" action="https://formsubmit.co/Russell@Russellfsc.com" method="POST">
+      <input type="hidden" name="_subject" id="subjectField" value="New Dive CFO inquiry from russellfsc.com">
+      <input type="hidden" name="_next" value="https://russellfsc.com/thanks.html">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
       <div class="form-grid">
         <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
         <div class="field"><label for="business">Business name</label><input id="business" name="business" autocomplete="organization"></div>
@@ -32,8 +37,9 @@
         <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
         <div class="field full"><label for="type">What kind of business do you run?</label><select id="type" name="type"><option value="">Choose one</option><option>Dive shop / retail</option><option>Dive resort / lodge</option><option>Liveaboard</option><option>Dive travel company</option><option>Training organization</option><option>Outdoor / adventure business</option><option>Nonprofit / conservation</option><option>Other</option></select></div>
         <div class="field full"><label for="need">What do you most want help figuring out?</label><select id="need" name="need"><option value="">Choose one</option><option>Dive Profit Blueprint / overall profitability</option><option>Fractional Controller support</option><option>Fractional CFO support</option><option>Dive trip profitability / pricing</option><option>Cash flow / seasonal planning</option><option>Inventory / working capital</option><option>Pricing / margins</option><option>Not sure yet</option></select></div>
+        <div class="field full"><label for="besttime">Best time to reach you <span style="font-weight:500;color:#6b8290">(optional)</span></label><input id="besttime" name="best_time" placeholder="e.g. Weekday mornings, or text me first"></div>
         <div class="field full"><label for="message">What is happening in the business?</label><textarea id="message" name="message" placeholder="A few sentences is enough. What decision are you trying to make? What feels unclear?" required></textarea></div>
-        <div class="field full"><button class="btn btn-dark" type="submit" style="border:0;cursor:pointer">CREATE EMAIL TO RUSSELL →</button><p class="form-note">Because this site is hosted without a paid form service, clicking the button opens your email app with your information prefilled. You can review it before sending.</p></div>
+        <div class="field full"><button class="btn btn-dark" type="submit" id="sendBtn" style="border:0;cursor:pointer">SEND MESSAGE →</button><p class="form-note">Your message goes directly to Russell, and he will reply personally. Your information is never shared or sold.</p></div>
       </div>
     </form>
   </div>
@@ -49,22 +55,10 @@
   const need=document.getElementById('need');
   if(service&&need){const map={blueprint:'Dive Profit Blueprint / overall profitability',controller:'Fractional Controller support',cfo:'Fractional CFO support',trip:'Dive trip profitability / pricing'};if(map[service]) need.value=map[service];}
   if(topic&&document.getElementById('message')) document.getElementById('message').value='I came from the Resources page and want to talk about: '+topic.replaceAll('-',' ')+'.\n\n';
-  document.getElementById('contactForm').addEventListener('submit',function(e){
-    e.preventDefault();
-    const v=id=>document.getElementById(id).value.trim();
-    const subject='Dive CFO inquiry — '+(v('business')||v('name'));
-    const body=[
-      'Name: '+v('name'),
-      'Business: '+v('business'),
-      'Email: '+v('email'),
-      'Phone: '+v('phone'),
-      'Business type: '+v('type'),
-      'Main need: '+v('need'),
-      '',
-      'What is happening in the business?',
-      v('message')
-    ].join('\n');
-    location.href='mailto:Russell@Russellfsc.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  document.getElementById('contactForm').addEventListener('submit',function(){
+    const v=id=>(document.getElementById(id).value||'').trim();
+    document.getElementById('subjectField').value='Dive CFO inquiry: '+(v('business')||v('name'));
+    const b=document.getElementById('sendBtn'); b.textContent='SENDING…'; setTimeout(()=>{b.disabled=true;},0);
   });
 })();
 </script>
