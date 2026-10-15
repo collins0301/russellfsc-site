@@ -17,21 +17,22 @@ img{display:block;max-width:100%}
     radial-gradient(ellipse 34% 140% at 52% -10%,rgba(214,244,250,.95),rgba(140,199,214,.55) 45%,transparent 75%),
     linear-gradient(90deg,#3e7790 0%,#6aa5ba 30%,#8cbdce 50%,#4f8ea6 72%,#0b5068 100%);
   border-bottom:1px solid rgba(255,255,255,.18)}
-.top-row{display:flex;align-items:center;gap:40px;min-height:118px}
+.top-row{display:flex;align-items:center;gap:clamp(16px,2.4vw,40px);min-height:clamp(90px,6.9vw,118px)}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.brand-emblem{width:128px;height:auto;margin:-4px 0 -6px}
+.brand{flex-shrink:0}
+.brand-emblem{width:clamp(64px,7.4vw,128px);height:auto;margin:-4px 0 -6px}
 .brand-words{display:flex;flex-direction:column}
-.brand-title{font-family:'Outfit',sans-serif;font-weight:800;font-size:3.15rem;line-height:.95;letter-spacing:-.02em;color:#0b2346}
+.brand-title{font-family:'Outfit',sans-serif;font-weight:800;font-size:clamp(1.8rem,3.1vw,3.15rem);line-height:.95;letter-spacing:-.02em;color:#0b2346}
 .brand-title b{color:var(--teal);font-weight:800}
-.brand-sub{margin-top:6px;font-size:.6rem;font-weight:700;letter-spacing:.02em;color:#173a52}
-.nav{display:flex;gap:50px;margin-left:auto}
-.nav a{position:relative;text-decoration:none;font-family:'Outfit',sans-serif;font-size:1.2rem;color:#0b2346;padding:14px 4px}
+.brand-sub{margin-top:6px;font-size:clamp(.48rem,.55vw,.6rem);font-weight:700;letter-spacing:.02em;color:#173a52}
+.nav{display:flex;gap:clamp(18px,2.8vw,50px);margin-left:auto}
+.nav a{position:relative;text-decoration:none;font-family:'Outfit',sans-serif;font-size:clamp(1rem,1.2vw,1.2rem);color:#0b2346;padding:14px 4px}
 .nav a[aria-current="page"]{color:#fff}
 .nav a[aria-current="page"]:after{content:"";position:absolute;left:-6px;right:-6px;bottom:2px;height:3px;border-radius:2px;background:var(--teal)}
 .nav a:hover{color:#fff}
-.work-btn{margin-left:auto;display:inline-flex;align-items:center;gap:12px;padding:20px 58px;border-radius:22px;
+.work-btn{margin-left:auto;display:inline-flex;align-items:center;gap:12px;padding:18px clamp(20px,3.3vw,58px);border-radius:22px;
   background:linear-gradient(180deg,#0f5d72,#073e52);border:1px solid rgba(110,225,235,.45);
-  color:#fff;text-decoration:none;font-family:'Outfit',sans-serif;font-weight:700;font-size:1.05rem;letter-spacing:.14em;
+  color:#fff;text-decoration:none;font-family:'Outfit',sans-serif;font-weight:700;font-size:clamp(.82rem,1vw,1.05rem);letter-spacing:.14em;
   box-shadow:0 8px 24px rgba(2,30,45,.25)}
 .work-btn:hover{background:#0f6b82}
 .menu-btn{display:none}
@@ -114,12 +115,6 @@ img{display:block;max-width:100%}
 /* ---------- Tablet ---------- */
 @media (max-width:1200px){
   .wrap{width:calc(100% - 48px)}
-  .top-row{gap:24px;min-height:96px}
-  .brand-emblem{width:92px}
-  .brand-title{font-size:2.3rem}
-  .nav{gap:26px}
-  .nav a{font-size:1.05rem}
-  .work-btn{padding:15px 26px;font-size:.9rem}
   .card-body{padding:16px 20px 22px 20px}
   .card-icon{width:56px;height:56px;left:auto;right:16px}
   .card-icon svg{width:26px;height:26px}
@@ -131,19 +126,27 @@ img{display:block;max-width:100%}
   .trust-row div:nth-child(2){border-right:0}
 }
 
-/* ---------- Phone ---------- */
-@media (max-width:760px){
-  .wrap{width:calc(100% - 32px)}
-  .top-row{min-height:72px;gap:10px;flex-wrap:wrap}
-  .brand-emblem{width:54px;margin:0}
-  .brand-title{font-size:1.6rem}
-  .brand-sub{font-size:.46rem}
+/* ---------- Header collapses to a menu button ---------- */
+.brand-title,.brand-sub,.work-btn{white-space:nowrap}
+@media (max-width:1060px){
+  .top-row{min-height:76px;gap:10px;flex-wrap:wrap}
+  .brand-emblem{width:60px;margin:0}
+  .brand-title{font-size:1.75rem}
+  .brand-sub{font-size:.5rem}
   .menu-btn{display:block;margin-left:auto;background:none;border:0;font-size:1.8rem;color:#0b2346;cursor:pointer;padding:6px 4px}
   .nav{display:none;order:3;width:100%;flex-direction:column;gap:0;margin:0 0 10px}
   .nav.open{display:flex}
   .nav a{padding:12px 4px;border-top:1px solid rgba(11,35,70,.12)}
   .nav a[aria-current="page"]:after{display:none}
   .work-btn{display:none}
+}
+
+/* ---------- Phone ---------- */
+@media (max-width:760px){
+  .wrap{width:calc(100% - 32px)}
+  .brand-emblem{width:54px}
+  .brand-title{font-size:1.6rem}
+  .brand-sub{font-size:.46rem}
   .hero{min-height:0}
   .hero-inner{padding:34px 0 40px}
   .kicker{font-size:.8rem;margin-bottom:20px}
